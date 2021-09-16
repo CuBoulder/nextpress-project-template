@@ -1,0 +1,97 @@
+{
+    "name": "cu-boulder/site-template",
+    "description": "Project template for Drupal 9",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-recommended": "^9.1",
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/entity_embed": "^1.1",
+        "drupal/features": "^3.12",
+        "drupal/field_group": "^3.1",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
+        "drupal/simplesamlphp_auth": "^3.1",
+        "drupal/smtp": "^1.0",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.0",
+        "simplesamlphp/simplesamlphp": "^1.18"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9.1",
+        "drupal/drupal-extension": "~4.0",
+        "overtrue/phplint": "^2.3",
+        "phpspec/prophecy-phpunit": "^2"
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.gh.xml --testsuite profile --debug",
+        "behat": "behat -c behat.gh.yml -s content",
+        "lint": "phplint -v",
+        "upgrade-drupal": "composer update drupal/core 'drupal/core-*' --with-all-dependencies && echo 'Run update script with drush updatedb\n' "
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "process-timeout": 0,
+        "platform": {
+            "php": "7.3.0"
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "."
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        }
+    }
+}
