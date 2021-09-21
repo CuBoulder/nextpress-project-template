@@ -14,7 +14,10 @@ tooling:
       --site-name="Web Express V2 Test Site"
       --account-name="admin" --account-pass="password"
       install_configure_form.enable_update_status_module=NULL
-      install_configure_form.enable_update_status_emails=NULL
+      install_configure_form.enable_update_status_emails=NULL &&
+      echo "\nLogin with Username: admin Password: password" &&
+      php -r "echo 'Site URL:' . json_decode(getenv('LANDO_INFO'), TRUE)['appserver']['urls'][0];" &&
+      echo "\n"
   behat:
     description: Run Behat Tests
     service: appserver
@@ -32,7 +35,7 @@ services:
       - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS drupal9_test; GRANT ALL PRIVILEGES ON drupal9_test.* TO 'lamp'@'%' IDENTIFIED by 'lamp';"
 config:
   php: '7.4'
-  composer_version: '1.10.1'
+  composer_version: '2.1.8'
   webroot: .
   database: mariadb
   xdebug: false
