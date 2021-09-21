@@ -3,6 +3,8 @@ A project template to get a development version of nextpress running. **DO NOT**
 
 ## Installation
 ````
+composer -V           # verify that your machine has composer 2.x installed
+
 git clone https://github.com/CuBoulder/nextpress-project-template <project-name>
 cd <project-name>
 
