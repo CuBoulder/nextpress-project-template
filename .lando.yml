@@ -16,7 +16,7 @@ tooling:
       install_configure_form.enable_update_status_module=NULL
       install_configure_form.enable_update_status_emails=NULL &&
       echo "\nLogin with Username: admin Password: password" &&
-      php -r "echo 'Site URL:' . json_decode(getenv('LANDO_INFO'), TRUE)['appserver']['urls'][0];" &&
+      php -r "echo 'Site URL: ' . json_decode(getenv('LANDO_INFO'), TRUE)['appserver']['urls'][0];" &&
       echo "\n"
   behat:
     description: Run Behat Tests
