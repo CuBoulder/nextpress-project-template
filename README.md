@@ -1,3 +1,4 @@
+[![Update Prod composer.json](https://github.com/CuBoulder/nextpress-project-template/actions/workflows/main.yml/badge.svg)](https://github.com/CuBoulder/nextpress-project-template/actions/workflows/main.yml)
 # nextpress-project-template
 A project template to get a development version of nextpress running. **DO NOT** use this branch in production! The production composer.* files can be found on the `production` branch.
 
