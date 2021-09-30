@@ -2,9 +2,9 @@ name: Update Prod composer.json
 on:
   push:
     branches: [main]
-    paths:
-      - 'composer.json'
-      - 'composer.lock'
+    # paths:
+    #   - 'composer.json'
+    #   - 'composer.lock'
 jobs:
   create_composer_json:
     name: Create Production composer.json
@@ -26,7 +26,7 @@ jobs:
             rm composer-setup.php
             exit 1
           fi
-          php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
+          php composer-setup.php --quiet --filename=composer
           RESULT=$?
           rm composer-setup.php
           exit $RESULT
