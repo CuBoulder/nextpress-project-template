@@ -42,4 +42,4 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git add composer.*
           git commit -m "automated update"
-          git push -f git@github.com:CuBoulder/nextpress-project-template.git main:production
+          git push -f https://${{secrets.GITHUB_TOKEN}}@github.com/CuBoulder/nextpress-project-template.git main:production
