@@ -2,9 +2,9 @@ name: Update Prod composer.json
 on:
   push:
     branches: [main]
-    # paths:
-    #   - 'composer.json'
-    #   - 'composer.lock'
+    paths:
+      - 'composer.json'
+      - 'composer.lock'
 jobs:
   create_composer_json:
     name: Create Production composer.json
