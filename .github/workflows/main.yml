@@ -14,10 +14,30 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: 'production'
-      - name: Update File
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Setup Composer
         run: |
-          curl https://github.com/CuBoulder/nextpress-project-template/blob/main/composer.json > composer.json
-          curl https://github.com/CuBoulder/nextpress-project-template/blob/main/composer.lock > composer.lock
+          EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
+          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+          ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+          if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
+          then
+            rm composer-setup.php
+            exit 1
+          fi
+          php composer-setup.php --quiet --install-dir=/usr/bin --filename=composer
+          RESULT=$?
+          rm composer-setup.php
+          exit $RESULT
+      - name: Update composer.json
+        run: php .github/scripts/generate.php
+      - name: Update composer.lock
+        run: composer update
+      - name: Validate composer.json
+        run: composer validate
       - name: Push to production branch
         run: |
           git config --local user.name "${{ github.actor }}"
