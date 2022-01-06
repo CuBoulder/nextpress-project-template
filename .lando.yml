@@ -35,7 +35,7 @@ services:
       - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS drupal9_test; GRANT ALL PRIVILEGES ON drupal9_test.* TO 'lamp'@'%' IDENTIFIED by 'lamp';"
 config:
   php: '7.4'
-  composer_version: '2.1.14'
+  composer_version: '2.2.3'
   webroot: .
   database: mariadb
   xdebug: false
