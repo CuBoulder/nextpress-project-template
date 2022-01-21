@@ -57,6 +57,11 @@
         "process-timeout": 0,
         "platform": {
             "php": "7.3.0"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "simplesamlphp/composer-module-installer": true
         }
     },
     "extra": {
