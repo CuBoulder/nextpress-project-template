@@ -11049,7 +11049,7 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.6",
+            "version": "2.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
