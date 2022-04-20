@@ -1,75 +1,32 @@
-<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
+[![Update Prod composer.json](https://github.com/CuBoulder/nextpress-project-template/actions/workflows/main.yml/badge.svg)](https://github.com/CuBoulder/nextpress-project-template/actions/workflows/main.yml)
+# nextpress-project-template
+A project template to get a development version of nextpress running. **DO NOT** use this branch in production! The production composer.* files can be found on the `production` branch.
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
+## Installation
+````
+composer -V             # verify that your machine has composer 2.x installed
 
-## Contributing
+git clone https://github.com/CuBoulder/nextpress-project-template <project-name>
 
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
+cd <project-name>
 
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
+open .lando.yml file and replace the name value on line 1 with your project name
 
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
+lando start             # this command will take a while if it's the first it's being run
+php clone-modules.php   # this clones all the cu-boulder/* packages
+lando install-site      # this installs Drupal
 
-## Usage
+Additional step for local development
+lando drush pmu simplesamlphp_auth 	#allows local logins and not SSO 
 
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
+````
 
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
+### Development on this Repository
+The files that should be changed are the `composer.json` and `composer.lock` if new packages are added. If new `cu-boulder/*` packages are added, add them to
+the `composer.json` repositories section. Don't add them to the require section - instead re-run `php clone-modules.php` to get the development versions of the modules.
 
-## Changelog
+### Site Development
+Starting the app for the first time will install all the composer dependencies and clone down all of the CU Boulder modules. Even though the modules are composer packages, they are cloned with git so we can do development work on them.
 
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
-
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
-
-Learn about the [Drupal trademark and logo policy here][trademark].
-
-[Drupal.org]: https://www.drupal.org
-[Drupal community]: https://www.drupal.org/community
-[GitLab repository]: https://git.drupalcode.org/project/drupal
-[issue queue]: https://www.drupal.org/project/issues/drupal
-[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
-[documentation]: https://www.drupal.org/documentation
-[changelog]: https://www.drupal.org/list-changes/drupal
-[modules]: https://www.drupal.org/project/project_module
-[security advisories]: https://www.drupal.org/security
-[security RSS]: https://www.drupal.org/security/rss.xml
-[security team]: https://www.drupal.org/drupal-security-team
-[service providers]: https://www.drupal.org/drupal-services
-[support]: https://www.drupal.org/support
-[trademark]: https://www.drupal.com/trademark
+## Production Branch
+Contains the production version of the `composer.json` and `composer.lock` files. **DO NOT** merge this into main! This branch is automatically updated when any of the composer.* files are changed on the main branch via Github Actions.
