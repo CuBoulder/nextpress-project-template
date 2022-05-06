@@ -13,11 +13,10 @@ cd <project-name>
 open .lando.yml file and replace the name value on line 1 with your project name
 
 lando start             # this command will take a while if it's the first it's being run
-php clone-modules.php   # this clones all the cu-boulder/* packages
 lando install-site      # this installs Drupal
 
 Additional step for local development
-lando drush pmu simplesamlphp_auth 	#allows local logins and not SSO 
+lando drush pmu simplesamlphp_auth 	# allows local logins and disables SSO 
 
 ````
 
