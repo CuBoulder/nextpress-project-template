@@ -25,6 +25,7 @@
         "cu-boulder/ucb_shortcodes": "dev-main",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/consumer_image_styles": "^4.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/entity_embed": "^1.1",
