@@ -41,7 +41,8 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.0",
-        "simplesamlphp/simplesamlphp": "^1.18"
+        "simplesamlphp/simplesamlphp": "^1.18",
+        "drupal/better_social_sharing_buttons": "^3.2"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
