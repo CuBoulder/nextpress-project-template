@@ -1035,7 +1035,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb_focal_image_enable.git",
-                "reference": "7e451387a21face5edf2ffc17cbdfddcef2920e6"
+                "reference": "60e01e2d67a36c62dbf7cfaee945fdf6f2b16f53"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -1043,7 +1043,7 @@
                 "MIT"
             ],
             "description": "Enables focal image styles from JSONAPI",
-            "time": "2022-07-05T22:05:29+00:00"
+            "time": "2022-07-07T18:19:50+00:00"
         },
         {
             "name": "cu-boulder/ucb_shortcodes",
@@ -1677,16 +1677,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.4.1",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614"
+                "reference": "5a4d6acc99e279f70a914804ff3dd08111707de1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
-                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
+                "url": "https://api.github.com/repos/drupal/core/zipball/5a4d6acc99e279f70a914804ff3dd08111707de1",
+                "reference": "5a4d6acc99e279f70a914804ff3dd08111707de1",
                 "shasum": ""
             },
             "require": {
@@ -1929,13 +1929,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.4.1"
+                "source": "https://github.com/drupal/core/tree/9.4.2"
             },
-            "time": "2022-06-21T20:53:48+00:00"
+            "time": "2022-07-07T01:18:39+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.4.1",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1979,22 +1979,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.1"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.2"
             },
             "time": "2022-06-19T16:14:23+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.4.1",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "a3ae54715ba7792fe596c2f6a73dfcef217b0577"
+                "reference": "c10da85434356b27e2bf0516a7b6f8103b473038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a3ae54715ba7792fe596c2f6a73dfcef217b0577",
-                "reference": "a3ae54715ba7792fe596c2f6a73dfcef217b0577",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c10da85434356b27e2bf0516a7b6f8103b473038",
+                "reference": "c10da85434356b27e2bf0516a7b6f8103b473038",
                 "shasum": ""
             },
             "require": {
@@ -2003,7 +2003,7 @@
                 "doctrine/annotations": "~1.13.2",
                 "doctrine/lexer": "~1.2.3",
                 "doctrine/reflection": "~1.2.3",
-                "drupal/core": "9.4.1",
+                "drupal/core": "9.4.2",
                 "egulias/email-validator": "~3.2",
                 "guzzlehttp/guzzle": "~6.5.8",
                 "guzzlehttp/promises": "~1.5.1",
@@ -2065,9 +2065,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.4.1"
+                "source": "https://github.com/drupal/core-recommended/tree/9.4.2"
             },
-            "time": "2022-06-21T20:53:48+00:00"
+            "time": "2022-07-07T01:18:39+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4352,16 +4352,16 @@
         },
         {
             "name": "laminas/laminas-diactoros",
-            "version": "2.11.2",
+            "version": "2.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "78846cbce0550ec174508a646f46fd6dee76099b"
+                "reference": "1f97b0c52eafd108e09c76d6b29d83ef4a855f76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/78846cbce0550ec174508a646f46fd6dee76099b",
-                "reference": "78846cbce0550ec174508a646f46fd6dee76099b",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/1f97b0c52eafd108e09c76d6b29d83ef4a855f76",
+                "reference": "1f97b0c52eafd108e09c76d6b29d83ef4a855f76",
                 "shasum": ""
             },
             "require": {
@@ -4447,7 +4447,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-06-29T14:15:02+00:00"
+            "time": "2022-07-06T09:24:53+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -11028,16 +11028,16 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "v3.10.0",
+            "version": "v3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "a55661154079cf881ef643b303bfaf67bae3a09f"
+                "reference": "a19c72c78eb0cdf7b7c4dabfeec9eb3a282728fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/a55661154079cf881ef643b303bfaf67bae3a09f",
-                "reference": "a55661154079cf881ef643b303bfaf67bae3a09f",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/a19c72c78eb0cdf7b7c4dabfeec9eb3a282728fc",
+                "reference": "a19c72c78eb0cdf7b7c4dabfeec9eb3a282728fc",
                 "shasum": ""
             },
             "require": {
@@ -11045,7 +11045,7 @@
                 "behat/transliterator": "^1.2",
                 "ext-mbstring": "*",
                 "php": "^7.2 || ^8.0",
-                "psr/container": "^1.0",
+                "psr/container": "^1.0 || ^2.0",
                 "symfony/config": "^4.4 || ^5.0 || ^6.0",
                 "symfony/console": "^4.4 || ^5.0 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
@@ -11054,7 +11054,6 @@
                 "symfony/yaml": "^4.4 || ^5.0 || ^6.0"
             },
             "require-dev": {
-                "container-interop/container-interop": "^1.2",
                 "herrera-io/box": "~1.6.1",
                 "phpunit/phpunit": "^8.5 || ^9.0",
                 "symfony/process": "^4.4 || ^5.0 || ^6.0",
@@ -11109,9 +11108,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Behat/issues",
-                "source": "https://github.com/Behat/Behat/tree/v3.10.0"
+                "source": "https://github.com/Behat/Behat/tree/v3.11.0"
             },
-            "time": "2021-11-02T20:09:40+00:00"
+            "time": "2022-07-07T09:49:27+00:00"
         },
         {
             "name": "behat/gherkin",
@@ -12068,7 +12067,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.4.1",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -12112,7 +12111,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.4.1"
+                "source": "https://github.com/drupal/core-dev/tree/9.4.2"
             },
             "time": "2022-04-14T00:37:13+00:00"
         },
@@ -15437,5 +15436,5 @@
     "platform-overrides": {
         "php": "7.3.0"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
