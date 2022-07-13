@@ -1062,6 +1062,22 @@
             "time": "2022-04-27T21:13:23+00:00"
         },
         {
+            "name": "cu-boulder/ucb_site_contact_info",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CuBoulder/ucb_site_contact_info.git",
+                "reference": "36f159c1fea71aa1f4812989dcf64e604c43450b"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "MIT"
+            ],
+            "description": "Stores and provides site contact information as a block in the site footer.",
+            "time": "2022-06-29T16:07:08+00:00"
+        },
+        {
             "name": "cweagans/composer-patches",
             "version": "1.7.2",
             "source": {
@@ -15421,6 +15437,7 @@
     "stability-flags": {
         "cu-boulder/ucb2021_base": 20,
         "cu-boulder/ucb2021_profile": 20,
+        "cu-boulder/ucb_site_contact_info": 20,
         "cu-boulder/ucb_custom_page_types": 20,
         "cu-boulder/ucb_custom_paragraphs": 20,
         "cu-boulder/ucb_default_content": 20,
