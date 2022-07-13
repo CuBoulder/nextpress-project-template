@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34c412080b49dbd2f0165a4c6c80a807",
+    "content-hash": "c3096c60a405e297a1be0698b2b871ea",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -944,7 +944,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb2021_base.git",
-                "reference": "bb13ebbb9d0652570702819f1d8610a238a6b2ac"
+                "reference": "37eb9a5d19b722c7b043f16f7c9493a04316a33a"
             },
             "default-branch": true,
             "type": "drupal-custom-theme",
@@ -952,7 +952,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal 9 2021 base theme for CU Boulder",
-            "time": "2022-06-29T15:47:00+00:00"
+            "time": "2022-07-13T15:01:26+00:00"
         },
         {
             "name": "cu-boulder/ucb2021_profile",
@@ -960,7 +960,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb2021_profile.git",
-                "reference": "88332884b27bfe31412a9573a7ea614f644f52f5"
+                "reference": "bdce7a2f83816eeeabc0516eecb50ae9ce7841ba"
             },
             "default-branch": true,
             "type": "drupal-custom-profile",
@@ -968,7 +968,7 @@
                 "MIT"
             ],
             "description": "Drupal 9 base profile for CU Boulder",
-            "time": "2022-06-29T15:46:15+00:00"
+            "time": "2022-07-13T15:03:46+00:00"
         },
         {
             "name": "cu-boulder/ucb_custom_page_types",
@@ -1067,7 +1067,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb_site_contact_info.git",
-                "reference": "36f159c1fea71aa1f4812989dcf64e604c43450b"
+                "reference": "12e0b51179b54754dde4eea87151c38439766fe6"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -1075,7 +1075,7 @@
                 "MIT"
             ],
             "description": "Stores and provides site contact information as a block in the site footer.",
-            "time": "2022-06-29T16:07:08+00:00"
+            "time": "2022-07-13T15:10:36+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -11508,16 +11508,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.16",
+            "version": "2.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6"
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
+                "url": "https://api.github.com/repos/composer/composer/zipball/a8ab5070fb99396e4710baee286478ad697724c2",
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2",
                 "shasum": ""
             },
             "require": {
@@ -11587,7 +11587,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.16"
+                "source": "https://github.com/composer/composer/tree/2.2.17"
             },
             "funding": [
                 {
@@ -11603,7 +11603,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-05T14:50:29+00:00"
+            "time": "2022-07-13T13:27:38+00:00"
         },
         {
             "name": "composer/metadata-minifier",
