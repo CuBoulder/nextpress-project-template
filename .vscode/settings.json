@@ -2,6 +2,7 @@
 	"files.associations": {
 		"*.install": "php",
 		"*.module": "php",
-		"*.profile": "php"
+		"*.profile": "php",
+		"*.theme": "php"
 	}
 }

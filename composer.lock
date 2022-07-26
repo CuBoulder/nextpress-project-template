@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0841cc622d69507789f95e4e54243d37",
+    "content-hash": "28ac3a9088e1935a16b734d28336fc87",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1067,7 +1067,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb_site_configuration.git",
-                "reference": "ecbc8b6888579228373a1fa52a0330717c5a9381"
+                "reference": "fd1765fa00506234977d88b9274ca40800f6e22f"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -1075,23 +1075,7 @@
                 "MIT"
             ],
             "description": "Allows CU Boulder site administrators to configure site-specific settings.",
-            "time": "2022-07-22T23:01:09+00:00"
-        },
-        {
-            "name": "cu-boulder/ucb_site_contact_info",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/CuBoulder/ucb_site_contact_info.git",
-                "reference": "12e0b51179b54754dde4eea87151c38439766fe6"
-            },
-            "default-branch": true,
-            "type": "drupal-custom-module",
-            "license": [
-                "MIT"
-            ],
-            "description": "Stores and provides site contact information as a block in the site footer.",
-            "time": "2022-07-13T15:10:36+00:00"
+            "time": "2022-07-26T20:10:58+00:00"
         },
         {
             "name": "cu-boulder/ucb_user_invite",
@@ -15470,7 +15454,6 @@
         "cu-boulder/ucb2021_base": 20,
         "cu-boulder/ucb2021_profile": 20,
         "cu-boulder/ucb_site_configuration": 20,
-        "cu-boulder/ucb_site_contact_info": 20,
         "cu-boulder/ucb_user_invite": 20,
         "cu-boulder/ucb_custom_page_types": 20,
         "cu-boulder/ucb_custom_paragraphs": 20,
