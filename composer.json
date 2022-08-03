@@ -9,22 +9,49 @@
         "chat": "https://www.drupal.org/node/314178"
     },
     "repositories": [
-        { "type": "composer", "url": "https://packages.drupal.org/8" },
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb2021_base.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb2021_profile.git"},
-		{ "type" : "git", "url" : "https://github.com/CuBoulder/ucb_site_configuration.git"},
-		{ "type" : "git", "url" : "https://github.com/CuBoulder/ucb_user_invite.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_custom_paragraphs.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_custom_page_types.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_shortcodes.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_focal_image_enable.git"}
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb2021_base.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb2021_profile.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_site_configuration.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_user_invite.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_custom_paragraphs.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_custom_page_types.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_shortcodes.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/CuBoulder/ucb_focal_image_enable.git"
+        }
     ],
     "require": {
         "composer/installers": "^1.9",
         "cu-boulder/ucb2021_base": "dev-main",
         "cu-boulder/ucb2021_profile": "dev-main",
-		"cu-boulder/ucb_site_configuration": "1.0-alpha",
-		"cu-boulder/ucb_user_invite": "dev-main",
+        "cu-boulder/ucb_site_configuration": "dev-main",
+        "cu-boulder/ucb_user_invite": "dev-main",
         "cu-boulder/ucb_custom_page_types": "dev-main",
         "cu-boulder/ucb_custom_paragraphs": "dev-main",
         "cu-boulder/ucb_default_content": "1.0-alpha",
@@ -50,12 +77,6 @@
         "drush/drush": "^10.0",
         "simplesamlphp/simplesamlphp": "^1.18",
         "drupal/better_social_sharing_buttons": "^3.2"
-    },
-    "require-dev": {
-        "drupal/core-dev": "^9.1",
-        "drupal/drupal-extension": "~4.0",
-        "overtrue/phplint": "^2.3",
-        "phpspec/prophecy-phpunit": "^2"
     },
     "scripts": {
         "test": "phpunit -c phpunit.gh.xml --testsuite profile --debug",
@@ -90,7 +111,7 @@
         },
         "patches": {
             "drupal/focal_point": {
-                "Focal Point No Upscale": "https://www.drupal.org/files/issues/2020-05-19/focal_point-do_not_upscale-3048398-16.patch"     
+                "Focal Point No Upscale": "https://www.drupal.org/files/issues/2020-05-19/focal_point-do_not_upscale-3048398-16.patch"
             }
         },
         "installer-paths": {
