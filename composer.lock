@@ -944,7 +944,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb2021_base.git",
-                "reference": "37eb9a5d19b722c7b043f16f7c9493a04316a33a"
+                "reference": "623c3b10fa6e9caea549a238aea68db94351d3d4"
             },
             "default-branch": true,
             "type": "drupal-custom-theme",
@@ -952,7 +952,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal 9 2021 base theme for CU Boulder",
-            "time": "2022-07-13T15:01:26+00:00"
+            "time": "2022-08-03T21:43:34+00:00"
         },
         {
             "name": "cu-boulder/ucb2021_profile",
@@ -960,7 +960,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb2021_profile.git",
-                "reference": "bdce7a2f83816eeeabc0516eecb50ae9ce7841ba"
+                "reference": "e8ec10434c53fdd38333c38ee206333a669881bb"
             },
             "default-branch": true,
             "type": "drupal-custom-profile",
@@ -968,7 +968,7 @@
                 "MIT"
             ],
             "description": "Drupal 9 base profile for CU Boulder",
-            "time": "2022-07-13T15:03:46+00:00"
+            "time": "2022-08-03T21:31:39+00:00"
         },
         {
             "name": "cu-boulder/ucb_custom_page_types",
